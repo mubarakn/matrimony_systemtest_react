@@ -7,7 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.profile-list {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.profile-list::-webkit-scrollbar {
+  display: none !important;
 }
