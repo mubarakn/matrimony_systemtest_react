@@ -6,6 +6,7 @@ import useSwipe from "../../hooks/useSwipe";
 import { ArrowBack } from "@mui/icons-material";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Swiping = () => {
   const navigate = useNavigate();
@@ -29,6 +30,9 @@ const Swiping = () => {
   const visibleProfiles = profiles.slice(profileIndex, 3 + profileIndex);
   return (
     <div className="match">
+      <Helmet>
+        <title>Match Game - Matrimony.com</title>
+      </Helmet>
       <div className="match-container">
         <Button
           sx={{

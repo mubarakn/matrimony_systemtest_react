@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ArrowBack from "@mui/icons-material/ArrowBack";
+import { Helmet } from "react-helmet";
 
 const Profile = () => {
   const params = useParams();
@@ -29,6 +30,9 @@ const Profile = () => {
         justifyContent: "center",
       }}
     >
+      <Helmet>
+        <title>Profile - Matrimony.com</title>
+      </Helmet>
       <Card
         sx={{
           marginInline: "auto",

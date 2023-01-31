@@ -7,6 +7,7 @@ import { lightBlue } from "@mui/material/colors";
 import { FixedSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Matches = () => {
   const navigate = useNavigate();
@@ -21,6 +22,9 @@ const Matches = () => {
         paddingBlock: 24,
       }}
     >
+      <Helmet>
+        <title>Recommendations - Matrimony.com</title>
+      </Helmet>
       <div
         style={{
           marginInline: "auto",
